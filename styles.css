@@ -335,7 +335,8 @@ nav ul li a:hover::after {
 }
 
 .token-benefits {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -560,7 +561,7 @@ footer p {
     }
     
     .token-benefits {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
     
