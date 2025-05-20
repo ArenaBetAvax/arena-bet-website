@@ -227,20 +227,38 @@ nav ul li a:hover::after {
     background-color: var(--dark-gray);
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 60%;
+}
+
 .section-description {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    font-size: 1.2rem;
+    text-align: left;
+    font-size: 1.1rem;
     color: #cccccc;
+    margin-bottom: 1.5rem;
 }
 
 .app-preview {
+    flex: 1;
+    max-width: 40%;
     text-align: center;
 }
 
 .app-preview img {
-    max-width: 80%;
+    max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
@@ -461,6 +479,22 @@ footer p {
         font-size: 1.8rem;
     }
     
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .section-description {
+        text-align: center;
+    }
+    
+    .app-preview {
+        margin-top: 2rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .token-content {
         flex-direction: column-reverse;
         text-align: center;
@@ -561,6 +595,14 @@ footer p {
     
     .section-description {
         font-size: 1rem;
+    }
+    
+    .about-text {
+        max-width: 100%;
+    }
+    
+    .app-preview {
+        max-width: 100%;
     }
     
     .features-grid {
